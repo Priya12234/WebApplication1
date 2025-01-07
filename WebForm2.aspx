@@ -13,6 +13,15 @@
         <p>
             <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile1.xml" Height="550px" Width="1080px" />
         </p>
+        <p>
+            &nbsp;</p>
+        <p>
+            &nbsp;</p>
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+        <p>
+            <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" />
+        </p>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
     </form>
 </body>
 </html>

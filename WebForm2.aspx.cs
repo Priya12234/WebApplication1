@@ -13,5 +13,20 @@ namespace WebApplication1
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                string filename = FileUpload1.FileName;
+                string path = Server.MapPath("~/Files/")+filename;
+                FileUpload1.SaveAs(path);
+                Label1.Text = "File Uploaded Successfully";
+            }
+            catch (Exception ex) 
+            {
+                Label1.Text += ex.Message;
+            }
+        }
     }
 }
